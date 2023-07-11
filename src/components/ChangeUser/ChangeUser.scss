@@ -1,0 +1,40 @@
+.change-user {
+  @include flex-row;
+  // align-self: flex-start;
+  align-items: center;
+  // background-color: $color-neutral-white;
+  // padding: 1.4rem;
+  border-radius: 0.6rem;
+
+  // @include mediaQuery(desktop) {
+  //   position: fixed;
+  //   top: 2rem;
+  //   right: 2rem;
+  // }
+
+  & > label {
+    font-weight: 500;
+    white-space: nowrap;
+    color: $color-neutral-dark-blue;
+    font-size: 1.4rem;
+  }
+
+  &__profile-picture {
+    height: 2.5rem;
+    width: 2.5rem;
+
+    margin-left: 1.25rem;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__dropdown {
+    font-size: 1.2rem;
+    color: $color-neutral-grayish-blue;
+    padding: 0.5rem 1rem;
+    width: 12rem;
+    margin-left: 1rem;
+  }
+}

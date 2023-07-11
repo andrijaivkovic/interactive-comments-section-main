@@ -1,0 +1,12 @@
+@import "sassStyles/variables";
+@import "sassStyles/mixins";
+
+@import "sassStyles/base";
+@import "sassStyles/reset";
+@import "sassStyles/typography";
+
+@import "components/ChangeUser/ChangeUser";
+@import "components/CommentContainer/CommentContainer";
+@import "components/Comment/Comment";
+@import "components/CommentInput/CommentInput";
+@import "components/Prompt/Prompt";

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%; // makes 1rem = 10px
+}
+
+#root {
+  width: 100%;
+  @include flex-column;
+  @include flex-center;
+
+  gap: 1rem;
+}
+
+body {
+  @include flex-column;
+  align-items: center;
+
+  padding: 2rem 1rem;
+
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  min-height: 100vh;
+
+  background-color: $color-neutral-light-gray;
+
+  scroll-behavior: smooth;
+
+  @include mediaQuery(desktop) {
+    justify-content: center;
+    padding-top: 12.5rem;
+    padding-bottom: 7rem;
+  }
+}
+
+select {
+  border: 1px solid rgba($color-neutral-grayish-blue, $alpha: 0.15);
+  border-radius: 0.6rem;
+  width: 100%;
+}
+
+textarea {
+  line-height: 1.5;
+  padding: 2rem;
+  resize: none;
+  border: 1px solid rgba($color-neutral-grayish-blue, $alpha: 0.15);
+  border-radius: 0.6rem;
+  width: 100%;
+}
+
+button {
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.comment-section {
+  @include flex-column;
+
+  width: 100%;
+  max-width: 73.5rem;
+
+  gap: 1rem;
+
+  @include mediaQuery(desktop) {
+    gap: 2rem;
+  }
+}
+
+.menu-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  background-color: $color-neutral-white;
+
+  padding: 1.6rem;
+
+  box-shadow: -1rem 0rem 2rem rgba(black, 0.1);
+
+  @include mediaQuery(desktop) {
+    flex-direction: row;
+
+    bottom: unset;
+    left: unset;
+
+    top: 0;
+    left: 0;
+    box-shadow: 1rem 0rem 2rem rgba(black, 0.1);
+  }
+
+  & > button {
+    background-color: $color-primary-moderate-blue;
+    font-size: 1.4rem;
+    color: $color-neutral-very-light-gray;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.8rem;
+  }
+}

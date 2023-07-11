@@ -1,0 +1,25 @@
+.comment-container {
+  @include flex-column;
+  gap: 1rem;
+
+  @include mediaQuery(desktop) {
+    gap: 2rem;
+  }
+}
+
+.comment-replies-container {
+  @include flex-column;
+
+  gap: 1rem;
+
+  padding-left: 1rem;
+
+  border-left: 1px solid rgba($color-neutral-grayish-blue, $alpha: 0.15);
+
+  @include mediaQuery(desktop) {
+    padding-left: 3.5rem;
+    margin-left: 3.5rem;
+
+    gap: 2rem;
+  }
+}
