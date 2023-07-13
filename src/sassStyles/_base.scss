@@ -28,10 +28,11 @@ body {
 
   scroll-behavior: smooth;
 
+  padding-bottom: 10rem;
+
   @include mediaQuery(desktop) {
     justify-content: center;
     padding-top: 12.5rem;
-    padding-bottom: 7rem;
   }
 }
 
