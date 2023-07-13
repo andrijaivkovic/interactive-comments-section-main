@@ -39,8 +39,8 @@ This is a solution to the [Interactive comments section challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-comment-section-built-with-reactjs-and-sass-NkH8CMWJ8a](https://www.frontendmentor.io/solutions/interactive-comment-section-built-with-reactjs-and-sass-NkH8CMWJ8a)
+- Live Site URL: [https://interactive-comment-section-ai.netlify.app](https://interactive-comment-section-ai.netlify.app)
 
 ## My process
 
